@@ -1,0 +1,51 @@
+{
+  "name": "mcp-morpho-tool",
+  "version": "1.0.1",
+  "description": "A Model Context Protocol (MCP) server for querying the Morpho API",
+  "main": "build/index.js",
+  "bin": {
+    "mcp-morpho-tool": "build/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "start": "node build/index.js",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aditya-dom/mcp-morpho-tool.git"
+  },
+  "keywords": [
+    "morpho",
+    "mcp",
+    "claude",
+    "anthropic",
+    "defi",
+    "ethereum",
+    "graphql"
+  ],
+  "author": "[Your Name] <your@email>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aditya-dom/mcp-morpho-tool/issues"
+  },
+  "homepage": "https://github.com/Aditya-dom/mcp-morpho-tool#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.4.1",
+    "axios": "^1.6.7",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE"
+  ]
+}
