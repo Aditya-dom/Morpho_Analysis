@@ -16,7 +16,7 @@ A Model Context Protocol (MCP) server that provides tools for querying the Morph
 
 1. Install the package:
 ```bash
-npm install mcp-morpho-server
+npm install mcp-morpho-tool
 ```
 
 2. Add to your Claude Desktop configuration:
@@ -26,7 +26,7 @@ npm install mcp-morpho-server
     "morpho": {
       "command": "node",
       "args": [
-        "/path/to/node_modules/mcp-morpho-server/build/index.js"
+        "/path/to/node_modules/mcp-morpho-tool/build/index.js"
       ]
     }
   }
